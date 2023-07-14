@@ -30,10 +30,12 @@ const Shop = () => {
                 // step 4: add the added product to the saved cart
                 savedCart.push(addedProduct);
             }
+              console.log('added Product', addedProduct)
         }
     
-        
-         // step 5: set the cart
+                // step 5: set the cart
+                setCart(savedCart);
+
     },[products])
 
     const handleAddToCart = (product) => {
